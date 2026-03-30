@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About - Tech Pulse">
+  <section class="about-hero">
+    <div class="container">
+      <span class="about-icon">⚡</span>
+      <h1 class="about-title">About Tech Pulse</h1>
+      <p class="about-subtitle">Your personal gateway to the future of technology</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-card">
+          <h2>Our Mission</h2>
+          <p>Tech Pulse was created to be your go-to source for the latest technology news, trends, and insights. We curate content from the most reliable sources across the tech industry to keep you informed about what's shaping the future.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-feature">
+            <div class="feature-icon">🤖</div>
+            <h3>AI & Machine Learning</h3>
+            <p>Stay updated on the latest breakthroughs in artificial intelligence.</p>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">📱</div>
+            <h3>Gadgets & Devices</h3>
+            <p>Reviews and news about the newest smartphones and devices.</p>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">🚀</div>
+            <h3>Startups & Funding</h3>
+            <p>Track the most promising startups and funding rounds.</p>
+          </div>
+          <div class="about-feature">
+            <div class="feature-icon">💻</div>
+            <h3>Programming</h3>
+            <p>Developer news, coding tutorials, and tool reviews.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .about-hero {
+    padding: calc(var(--header-height) + var(--spacing-4xl)) 0 var(--spacing-2xl);
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(123, 47, 247, 0.05) 100%);
+  }
+
+  .about-icon {
+    font-size: 64px;
+    display: block;
+    margin-bottom: var(--spacing-lg);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .about-title {
+    font-family: var(--font-heading);
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-subtitle {
+    font-size: 18px;
+    color: var(--text-secondary);
+  }
+
+  .about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2xl);
+  }
+
+  .about-card {
+    padding: var(--spacing-2xl);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+  }
+
+  .about-card h2 {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .about-card p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+
+  .about-feature {
+    padding: var(--spacing-xl);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-normal);
+  }
+
+  .about-feature:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-5px);
+  }
+
+  .feature-icon {
+    font-size: 36px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-feature h3 {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .about-feature p {
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
