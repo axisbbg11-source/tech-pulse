@@ -81,7 +81,7 @@ git commit -m "Initial commit: Tech Pulse website"
 
 # Add your GitHub repository as remote
 # Replace 'yourusername' with your actual GitHub username
-git remote add origin https://github.com/yourusername/tech-pulse.git
+git remote add origin https://github.com/axisbbg11-source/tech-pulse.git
 
 # Push to GitHub
 git push -u origin main
